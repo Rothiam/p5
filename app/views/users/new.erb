@@ -1,0 +1,14 @@
+<% if @current_user %>
+   Log out
+<% else %>
+   Sign Up
+   <form class="" action="/users" method="post">
+      <p>Username
+         <input type="text" name="name" value="">
+      </p>
+      <p>Password
+         <input type="password" name="password" value="">
+      </p>
+      <input type="submit" name="" value="Create Account">
+   </form>
+<% end %>
